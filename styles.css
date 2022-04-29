@@ -1,0 +1,546 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('FrizQuadrataItalic.ttf')  format('truetype');
+  }
+*{
+    box-sizing: border-box;
+    font-family: myFirstFont;
+}
+
+body{
+    margin:0px;
+    
+}
+
+h1{
+    font-family: none;
+    color: #C28F2B;
+    font-size: 200%;
+    padding: 15px 30px;
+}
+
+#h1{
+    border: solid #C28F2B;
+    border-radius: 0 15px;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    background-color: #111111;
+    min-height:60px;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center; 
+}
+
+#headerLeft{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header div{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    
+}
+
+header div nav{
+    align-items: center;
+}
+
+header nav a:hover{
+    background-color: #FE210B;
+    color: white;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #111111;
+    background-color: #00B2CE;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+main{
+    background-image: url(./arcanewall.jpeg);
+    margin:0;
+    
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  position: relative;
+}
+
+#main{
+    color: white;
+    width: 100vw;
+    min-height: 700px;
+    background-color: rgba(245, 245, 220, 0);
+    margin:auto;
+    padding: 20px;
+}
+
+#mainTop{
+    display: flex;
+    flex-direction: column;
+}
+
+#mainTitle{
+    display: flex;
+    justify-content: center;
+}
+
+#mainTitle h2{
+    font-size: 2.5em;
+}
+
+#firstMain{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#topmainLeft{
+    width:50%;
+}
+
+#topmainRight{
+    width:50%;
+}
+
+#middleMain{
+    padding: 50px;
+}
+
+#gifDisplay{
+    display: flex;
+}
+
+
+
+footer{
+    height: 200px;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+}
+
+.upperContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#showSummoner{
+    width:100%;
+}
+
+
+#searchEverything{
+    width: 100%;
+    background-color: rgba(255, 146, 127, 0.459);
+    padding: 20px;
+   
+}
+
+#summonerCard{
+    display:flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color:#C28F2B;
+    border-radius: 1rem;
+    margin: 30px;
+}
+
+#summonerSum{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+}
+
+#summonerPrinc{
+    width:75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#queue{
+    text-decoration: none;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+#plotContainer{
+    width: 50%;
+
+    
+}
+
+
+#summonerCard div img{
+    height: 16vw;
+}
+
+footer{
+    color:#9b9b9b;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:20px;
+}
+
+#bothTeams{
+    color: #111111;
+    display: flex;
+    margin: 30px 60px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a img{
+    margin-left: 30px;
+}
+
+#firstTeam{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #189DFF;
+   
+    padding: 30px 0;
+    
+}
+
+#secondTeam{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #FE210B;
+    padding: 30px 0;
+}
+
+.summonerInfo{
+    border: solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: beige;
+    width: 90%;
+    text-align: center;
+}
+
+#lastContainer{
+    height: 600px;
+}
+
+.spells{
+    display: flex;
+    justify-content: space-between;
+}
+
+#champData{
+    display: flex;
+    justify-content: space-between;
+}
+
+#showOtherData div img{
+    width: 100%;
+}
+
+#itemHeader{
+    display: flex;
+
+}
+
+#itemHeader div img{
+    width: 40px;
+    margin-left: 15px;
+}
+
+#summonerHeader div img{
+    width: 40px;
+    margin-left: 15px;
+}
+
+@media (min-width: 767px){
+    *{
+        box-sizing: border-box;
+        font-family: myFirstFont;
+    }
+    
+    body{
+        margin:0px;
+    }
+    
+    h1{
+        font-family: none;
+        color: #C28F2B;
+        font-size: 300%;
+        padding: 15px 30px;
+    }
+    
+    #h1{
+        border: solid #C28F2B;
+        border-radius: 0 15px;
+    }
+    
+    header{
+        width: 100%;
+        height: 20vh;
+        background-color: #111111;
+        min-height:60px;
+        max-height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center; 
+    }
+    
+    #headerLeft{
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+    }
+    
+    header div{
+        height: 70%;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    header div nav{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    
+    header nav a:hover{
+        background-color: #FE210B;
+        color: white;
+    }
+    
+    header nav a{
+        text-decoration: none;
+        color: #111111;
+        background-color: #00B2CE;
+        border-radius: 4px;
+        padding: 10px 20px;
+        margin:5px;
+    }
+    
+    main{
+        color: #111111;
+        background-image: url(./arcanewall.jpeg);
+        margin:0;
+        
+      background-position: center;
+      background-repeat: repeat;
+      background-size: auto;
+      position: relative;
+    }
+    
+    #main{
+        color: #111111;
+        width: 75vw;
+        min-height: 700px;
+        background-color: rgba(245, 245, 220, 0.658);
+        margin:auto;
+        padding: 20px;
+    }
+    
+    #mainTop{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #mainTitle{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #mainTitle h2{
+        font-size: 2.5em;
+    }
+    
+    #firstMain{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    
+    #topmainLeft{
+        width:50%;
+    }
+    
+    #topmainRight{
+        width:50%;
+    }
+    
+    #middleMain{
+        padding: 50px;
+    }
+    
+    #gifDisplay{
+        display: flex;
+    }
+    
+    footer{
+        height: 200px;
+        background-color: #111111;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .upperContainer{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #showSummoner{
+        width:50%;
+    }
+    
+    #searchEverything{
+        width: 50%;
+        
+        padding: 20px;
+    }
+    
+    #summonerCard{
+        display:flex;
+        flex-direction: row;
+        padding: 20px;
+        background-color:#C28F2B;
+        border-radius: 1rem;
+        margin: 30px;
+    }
+    
+    #summonerSum{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        text-align: center;
+    }
+    
+    #summonerPrinc{
+        width:75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #queue{
+        text-decoration: none;
+        margin: 10px 0 0 0;
+        font-weight: bold;
+    }
+    
+    #plotContainer{
+        width: 50%;
+    
+        
+    }
+    
+    
+    #summonerCard div img{
+        height: 11vw;
+    }
+    
+    footer{
+        color:#9b9b9b;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding:20px;
+    }
+    
+    #bothTeams{
+        display: flex;
+        margin: 0 60px;
+        flex-direction: column;
+    }
+    
+    a img{
+        margin-left: 30px;
+    }
+    
+    #firstTeam{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #189DFF;
+        margin: 40px 0;
+        padding: 30px 0;
+        
+    }
+    
+    #secondTeam{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #FE210B;
+        padding: 30px 0;
+    }
+    
+    .summonerInfo{
+        border: solid black;
+        margin: 10px;
+        padding: 10px;
+        background-color: beige;
+        width: 15%;
+        text-align: center;
+    }
+    
+    #lastContainer{
+        height: 600px;
+    }
+    
+    .spells{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #champData{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #showOtherData div img{
+        width: 100%;
+    }
+    
+    #itemHeader{
+        display: flex;
+    }
+    
+    #itemHeader div img{
+        width: 40px;
+        margin-left: 15px;
+    }
+    
+    #summonerHeader div img{
+        width: 40px;
+        margin-left: 15px;
+    }
+}

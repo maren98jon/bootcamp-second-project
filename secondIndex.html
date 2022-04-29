@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <script type="text/javascript" src="./media/languages/data/es_ES/champion.json"></script> -->
+<!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoLSearch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <div id="headerLeft">
+            <div>
+                <a href="index.html">
+                    <img src="./LoL_icon.svg" alt="mainicon" width="" height="60px">
+                </a>
+            </div>
+            <div id="h1">
+                <h1>LeagueOfLegends</h1>
+            </div>
+
+        </div>
+
+        <div>
+            <nav>
+                <a href="secondIndex.html" style="background-color: #FE210B;">Invocadores</a>
+                <a href="https://www.leagueoflegends.com/es-es/" target="_blank">OfficialPage</a>
+                <a href="https://wol.gg/top/euw/1/" target="_blank">TiempoPerdido</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <div class="upperContainer">
+                <div id="showSummoner">
+                    <div id="askSumData">
+                        <form>
+                            <div class="selectMenu">
+                                <div>
+                                    <label for="myFavs">Mis favoritos:</label>
+                                    <select name="myFavs" id="myFavs" onchange=fillAllData()>
+                                        <option selected disabled>None</option>
+    
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="region">Region:</label>
+                                    <select name="region" id="region">
+                                        <option value="euw1" selected>EUW</option>
+                                        <option value="na1">NA</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="rankedType">Tipo de ranked:</label>
+                                    <select name="rankedType" id="rankedType">
+                                        <option value="RANKED_SOLO_5x5" selected>SoloQ</option>
+                                        <option value="RANKED_FLEX_SR">Flex</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="summonerName">Nombre invocador:</label>
+                                <input type="text" name="summonerName" id="summonerName">
+                                <button id="getSumData">Buscar</button>
+
+                                <button id="mySummoner">Favorito</button>
+                                <button id="rusia" onclick="deleteFavs()">Borrar Favoritos</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div id="showData">
+
+
+                    </div>
+                </div>
+
+                <div id="searchEverything">
+                    <div id="askSomeData">
+
+                        <div class="selectData">
+                            <div>
+                                <label for="language">Idioma:</label>
+                                <select name="language" id="language">
+                                    <option value="es_ES" selected>ES</option>
+                                    <option value="de_DE">DE</option>
+                                    <option value="en_US">EN</option>
+                                    <option value="fr_FR">FR</option>
+                                    <option value="ja_JP">JP</option>
+                                    <option value="ko_KR">KR</option>
+                                    <option value="ru_RU">RU</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="searchType">¿Qué quieres conocer?:</label>
+                                <select name="searchType" id="searchType" onchange=ShowOptions()>
+                                    <option selected disabled>Options</option>
+                                    <option value="champion">Champions</option>
+                                    <option value="item">Items</option>
+                                    <option value="summoner">Summoners</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <select name="fillContainer" id="fillContainer">
+                                <option selected disabled>Choose one</option>
+
+                            </select>
+                            <button id="filterItem">Buscar</button>
+                        </div>
+
+                    </div>
+                    <div id="showOtherData">
+                        <div id="itemData">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lowContainer">
+                <div id="liveMatch">
+                    <div>
+                        <h2>¿Estás en partida?</h2>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="regionLive">Region:</label>
+                            <select name="regionLive" id="regionLive">
+                                <option value="euw1" selected>EUW</option>
+                                <option value="na1">NA</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="summonerliveName">Nombre invocador:</label>
+                            <input type="text" name="summonerliveName" id="summonerliveName">
+                            <button id="searchLive">Buscar</button>
+                        </div>
+
+                    </div>
+                    <div id="bothTeams">
+                        
+                    </div>
+                    <div id="lastcontainer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>NERAM</p>
+            <P>GAMES</P>
+        </div>
+        <div>
+            Copyrigth 2022 Neram Games,Inc Todos los derechos resevados.
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
